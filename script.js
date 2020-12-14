@@ -108,7 +108,7 @@ document.fonts.ready.then(function () {
 
   var text = new Blotter.Text("MWARE", {
       family: "'universe', Helvetica",
-      size: 33,
+      size: 34,
       fill: "#000000",
       paddingLeft: 5,
       paddingRight: 5,
@@ -119,7 +119,7 @@ document.fonts.ready.then(function () {
   });
 
   var material = new Blotter.FliesMaterial();
-  material.uniforms.uPointCellWidth.value = 0.03;
+  material.uniforms.uPointCellWidth.value = 0.04;
   material.uniforms.uPointRadius.value = 1.1;
   material.uniforms.uSpeed.value = 2;
 
