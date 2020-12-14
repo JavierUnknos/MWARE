@@ -119,7 +119,7 @@ document.fonts.ready.then(function () {
   });
 
   var material = new Blotter.FliesMaterial();
-  material.uniforms.uPointCellWidth.value = 0.07;
+  material.uniforms.uPointCellWidth.value = 0.03;
   material.uniforms.uPointRadius.value = 1.1;
   material.uniforms.uSpeed.value = 2;
 
@@ -145,7 +145,7 @@ document.fonts.ready.then(function () {
   });
 
   var material = new Blotter.FliesMaterial();
-  material.uniforms.uPointCellWidth.value = 0.07;
+  material.uniforms.uPointCellWidth.value = 0.03;
   material.uniforms.uPointRadius.value = 1.1;
   material.uniforms.uSpeed.value = 2;
 
