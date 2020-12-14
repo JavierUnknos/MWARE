@@ -143,6 +143,17 @@ header {
     margin-top: -5px;
 }
 
+.main_big {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+}
+
 .main {
     position: absolute;
     left: 50%;
@@ -187,7 +198,7 @@ header {
 }
 
 #logo2 canvas {
-    margin-bottom: -15px;
+    margin-bottom: -13px;
 } 
 
 #logo3 canvas {
@@ -200,22 +211,6 @@ header {
 
 
 /* RESPONSIVE*/
-
-@media (min-width: 1200px) {
-    .main_mobile{
-        display: none !important;
-    }
-    .main{
-        display: block !important;
-    }
-
-    header {
-    font-size: 44px;
-    line-height: 44px;
-    margin-inline-start: 0px;
-    margin-right: 150px;
-    }
-}
 
 @media (min-width: 700px) {
 
@@ -238,3 +233,43 @@ header {
         display: block;
     }
   }
+
+  @media (min-width: 1200px) {
+    .main_mobile{
+        display: none !important;
+    }
+    .main{
+        display: block !important;
+    }
+    .main_big{
+        display: none !important;
+    }
+
+    header {
+    font-size: 31px;
+    line-height: 31px;
+    margin-inline-start: 0px;
+    margin-right: 150px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .main_mobile{
+        display: none !important;
+    }
+    .main{
+        display: none !important;
+    }
+    .main_big{
+        display: block !important;
+    }
+
+    header {
+    font-size: 54px;
+    line-height: 54px;
+    margin-inline-start: 0px;
+    margin-right: 150px;
+    margin-top: 0px;
+    margin-left: 8px;
+    }
+}
