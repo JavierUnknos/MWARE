@@ -105,6 +105,8 @@ body {
 
 p, a {
     padding-right: 5em;
+    font-family: 'garamond_narrow_italic', serif;
+    font-style: italic;
 }
 
 h1 {
@@ -132,10 +134,8 @@ h2 {
 }
 
 header {
-    font-family: 'garamond_narrow_italic', serif;
     font-size: 21px;
     line-height : 21px;
-    font-style: italic;
     display: flex;
     position: fixed;
     top: 25px;
