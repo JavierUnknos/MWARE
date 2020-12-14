@@ -1,4 +1,4 @@
-
+document.fonts.ready.then(function () {
 
   container = document.getElementById("logo");
 
@@ -108,7 +108,7 @@
 
   var text = new Blotter.Text("MWARE", {
       family: "'universe', Helvetica",
-      size: 37,
+      size: 33,
       fill: "#000000",
       paddingLeft: 5,
       paddingRight: 5,
@@ -134,7 +134,7 @@
 
   var text = new Blotter.Text("MWARE", {
       family: "'universe', Helvetica",
-      size: 67,
+      size: 66,
       fill: "#000000",
       paddingLeft: 10,
       paddingRight: 10,
@@ -156,3 +156,4 @@
   var scope = blotter.forText(text);
   scope.appendTo(container);
 
+}.bind(this));

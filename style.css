@@ -84,7 +84,7 @@ a{
          url('fonts/ITCGaramondStd-LightNarrowItalic.woff2') format('woff2'),
          url('fonts/ITCGaramondStd-LightNarrowItalic.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
@@ -106,7 +106,7 @@ body {
 p, a {
     padding-right: 5em;
     font-family: 'garamond_narrow_italic', serif;
-    font-style: italic;
+    font-style: normal;
 }
 
 h1 {
@@ -187,11 +187,11 @@ header {
 }
 
 #logo2 canvas {
-    margin-bottom: -19px;
+    margin-bottom: -15px;
 } 
 
 #logo3 canvas {
-    margin-bottom: -36px;
+    margin-bottom: -29px;
 } 
 
 #line1 canvas {
