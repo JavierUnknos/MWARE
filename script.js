@@ -1,4 +1,4 @@
-document.fonts.ready.then(function () {
+
 
   container = document.getElementById("logo");
 
@@ -156,4 +156,3 @@ document.fonts.ready.then(function () {
   var scope = blotter.forText(text);
   scope.appendTo(container);
 
-}.bind(this));
