@@ -104,7 +104,7 @@ body {
 }
 
 p, a {
-    padding-right: 5em;
+    margin-right: 5em;
     font-family: 'garamond_narrow_italic', serif;
     font-style: normal;
 }
