@@ -104,14 +104,13 @@ body {
 }
 
 p, a {
-    margin-right: 5em;
-    font-family: 'garamond_narrow_italic', serif;
-    font-style: normal;
+    font-family:'garamond_narrow_italic';
+    margin-right: 3em;
 }
 
 h1 {
     display: block;
-    font-family: 'universe', sans-serif;
+    font-family:'universe';
     font-size: 37px;
     line-height : 37px;
     margin-block-start: 0px;
@@ -123,7 +122,7 @@ h1 {
 
 h2 {
     display: block;
-    font-family: 'garamond_narrow', serif;
+    font-family:'garamond_narrow';
     font-size: 38px;
     line-height : 38px;
     margin-block-start: 0px;
@@ -184,7 +183,7 @@ header {
     margin-bottom: 37px;
 }
 
-.logo_mobile_2 {
+.logo_ipad {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -197,17 +196,13 @@ header {
     text-align: center;
 }
 
-#logo2 canvas {
+#line5 canvas {
     margin-bottom: -13px;
-} 
+}
 
-#logo3 canvas {
+#line6 canvas {
     margin-bottom: -29px;
-} 
-
-#line1 canvas {
-    font-family: 'garamond_narrow';
-} 
+}
 
 
 /* RESPONSIVE*/
@@ -229,12 +224,12 @@ header {
     .logo_mobile {
         display: none;
     }
-    .logo_mobile_2 {
+    .logo_ipad {
         display: block;
     }
   }
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .main_mobile{
         display: none !important;
     }
@@ -244,13 +239,17 @@ header {
     .main_big{
         display: none !important;
     }
-
     header {
     font-size: 31px;
     line-height: 31px;
     margin-inline-start: 0px;
     margin-right: 150px;
     }
+
+    p, a {
+        margin-right:5em;
+    }
+    
 }
 
 @media (min-width: 2000px) {
