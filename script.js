@@ -1,19 +1,8 @@
-function angleBetweenPointsInDegrees(x1, y1, x2, y2) {
-    var angle = (Math.atan2(y2 - y1, x2 - x1) * 180.0) / Math.PI;
-  
-    angle = 180 + angle;
-  
-    return angle;
-  }
-  
-  function distanceBetweenPoints(x1, y1, x2, y2) {
-    var a = x1 - x2;
-    var b = y1 - y2;
-  
-    return Math.sqrt(a * a + b * b);
-  }
-
 document.fonts.ready.then ( function () {
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        return;
+    }
 
     var text = new Blotter.Text("© MWARE 2021", {
         family : "'universe', Helvetica",
@@ -118,35 +107,9 @@ document.fonts.ready.then ( function () {
         marginBottom: 0,
     });
 
-    var text9 = new Blotter.Text("MWARE", {
-        family: "universe, Helvetica",
-        size: 34,
-        leading: 1.3,
-        fill: "#000000",
-        paddingLeft: 5,
-        paddingRight: 5,
-        paddingTop: 0,
-        paddingBottom: 0,
-        marginTop: 0,
-        marginBottom: 0,
-    });
-
-    var text1 = new Blotter.Text("MWARE", {
-        family: "universe, Helvetica",
-        size: 66,
-        leading: 1.3,
-        fill: "#000000",
-        paddingLeft: 10,
-        paddingRight: 10,
-        paddingTop: 0,
-        paddingBottom: 0,
-        marginTop: 0,
-        marginBottom: 0,
-    });
-
     let options = {
         autobuild : true,
-        texts : [text, text2 ,text3 , text4, text5, text6, text7, text8, text9, text1]
+        texts : [text, text2 ,text3 , text4, text5, text6, text7, text8]
     };
 
     var material = new Blotter.FliesMaterial();
@@ -178,13 +141,6 @@ document.fonts.ready.then ( function () {
     var container8 = document.getElementById('line4.5');
     var scope8 = blotter.forText(text8);
     scope8.appendTo(container8);
-    var container9 = document.getElementById('line5');
-    var scope9 = blotter.forText(text9);
-    scope9.appendTo(container9);
-    var container1 = document.getElementById('line6');
-    var scope1 = blotter.forText(text1);
-    scope1.appendTo(container1);
-
 
     document.onmousemove = moveIt;
         function moveIt(event) {
