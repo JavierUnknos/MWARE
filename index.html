@@ -11,6 +11,7 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
 </head>
 
@@ -44,16 +45,13 @@
     <div class="main_mobile">
         <div class="logo_mobile">
             <div>
-                <h1>©<img src="./img/01.gif"
-                        style="height: 30px; margin-bottom: -2.5px; margin-left: 5px; margin-right: -5px;">
-                    </img>2021</h1>
+                <h1>©<span id="random_mobile"></span>2021</h1>
             </div>
         </div>
         <div class="logo_ipad">
             <div>
-                <h1>©<img src="./img/01.gif"
-                        style="height: 55px; margin-bottom: -4px; margin-left: 12px; margin-right: -10px;">
-                    </img>2021</h1>
+                <h1>©<span id="random_ipad"></span>2021
+                </h1>
             </div>
         </div>
         <div class="text">
@@ -62,5 +60,13 @@
     </div>
 
 </body>
+<script>
+
+    var images = ['01.gif', '02.gif', '03.gif', '04.gif'];
+
+    $('<img class="random_img_mobile" src="./img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#random_mobile');
+    $('<img class="random_img_ipad" src="./img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#random_ipad');
+</script>
+</script>
 
 </html>

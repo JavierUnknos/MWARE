@@ -196,12 +196,18 @@ header {
     text-align: center;
 }
 
-#line5 canvas {
-    margin-bottom: -13px;
+.random_img_mobile {
+    height: 30px; 
+    margin-bottom: -2.5px; 
+    margin-left: 2x; 
+    margin-right: 5px;
 }
 
-#line6 canvas {
-    margin-bottom: -29px;
+.random_img_ipad {
+    height: 55px; 
+    margin-bottom: -6px; 
+    margin-left: 8px; 
+    margin-right: 9px;
 }
 
 
