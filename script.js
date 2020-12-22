@@ -57,7 +57,7 @@ document.fonts.ready.then ( function () {
 
     var text5 = new Blotter.Text("© MWARE 2021", {
         family: "universe, Helvetica",
-        size: 97,
+        size: 105,
         leading: 1.3,
         fill: "#000000",
         paddingLeft: 20,
